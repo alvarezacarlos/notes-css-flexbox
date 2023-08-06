@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+    height: 100%;
+
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column;  */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: wrap; */
+
+    flex-flow: row wrap;
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    justify-content: space-around;
+
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+    align-items: stretch;
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: stretch; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+    background-color: red;   
+}
+
+.box1, .box2, .box3{
+    padding: 16px;
+}
+.box1{
+    background-color: rgb(80, 27, 8);
+    order: 2;
+
+    /* flex-grow: 2;
+    flex-basis: 2px; */
+    flex: 1 2px;   
+}
+.box2{
+    background-color: rgb(6, 46, 59);
+    order: 1;
+    flex-grow: 2;
+}
+.box3{
+    background-color: rgb(40, 72, 9);
+    order: 0;
+    flex-grow: 2;
+
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center;  */
+    /* align-self: baseline; */
+    align-self: stretch;
+}
+
+/* float, clear, verical-align no tienen efecto sobre flex items */
